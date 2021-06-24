@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Pt-8E-ZXJ">
-                                <rect key="frame" x="20" y="44" width="374" height="50"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QEc-Ls-Nkz"/>
                                 </constraints>
@@ -41,7 +41,7 @@
                             <constraint firstItem="C0p-v4-KmZ" firstAttribute="top" secondItem="6Pt-8E-ZXJ" secondAttribute="bottom" constant="20" id="Lfd-MC-FJW"/>
                             <constraint firstItem="C0p-v4-KmZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qgx-Wh-zCb"/>
                             <constraint firstItem="C0p-v4-KmZ" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="WXb-pd-zum"/>
-                            <constraint firstItem="6Pt-8E-ZXJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pzq-8q-wpk"/>
+                            <constraint firstItem="6Pt-8E-ZXJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pzq-8q-wpk"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -54,7 +54,7 @@
             <objects>
                 <viewController id="bzK-U1-dmD" customClass="PagingMenuViewController" customModule="PagingKit" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Xw-kz-jRP">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>

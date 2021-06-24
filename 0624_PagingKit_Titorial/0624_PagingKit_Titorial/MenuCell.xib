@@ -14,28 +14,29 @@
             <rect key="frame" x="0.0" y="0.0" width="360" height="114"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이틀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rie-7V-c5Y">
-                    <rect key="frame" x="157.5" y="73" width="45" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XBp-4K-L1e">
-                    <rect key="frame" x="130.5" y="73.5" width="20" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="20" id="uYX-6L-NE9"/>
-                    </constraints>
-                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="E5k-MJ-FMd">
+                    <rect key="frame" x="144.5" y="73.5" width="71.5" height="20.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XBp-4K-L1e">
+                            <rect key="frame" x="0.0" y="0.5" width="20" height="19.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="uYX-6L-NE9"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이틀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rie-7V-c5Y">
+                            <rect key="frame" x="27" y="0.0" width="44.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="ijj-mV-3X7"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="XBp-4K-L1e" firstAttribute="top" secondItem="rie-7V-c5Y" secondAttribute="top" id="DoR-5D-q3e"/>
-                <constraint firstItem="rie-7V-c5Y" firstAttribute="leading" secondItem="XBp-4K-L1e" secondAttribute="trailing" constant="7" id="Gtu-2B-i2d"/>
-                <constraint firstItem="XBp-4K-L1e" firstAttribute="bottom" secondItem="rie-7V-c5Y" secondAttribute="bottom" id="g2g-h2-dcl"/>
-                <constraint firstItem="ijj-mV-3X7" firstAttribute="bottom" secondItem="rie-7V-c5Y" secondAttribute="bottom" constant="20" id="izc-aB-viX"/>
-                <constraint firstItem="rie-7V-c5Y" firstAttribute="centerX" secondItem="V9c-eM-J0I" secondAttribute="centerX" id="jOy-sZ-mS5"/>
-                <constraint firstItem="ijj-mV-3X7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rie-7V-c5Y" secondAttribute="trailing" constant="157.5" id="vVB-Ld-Gdk"/>
+                <constraint firstItem="ijj-mV-3X7" firstAttribute="bottom" secondItem="E5k-MJ-FMd" secondAttribute="bottom" constant="20" id="3EP-6Y-Jtv"/>
+                <constraint firstItem="E5k-MJ-FMd" firstAttribute="centerX" secondItem="V9c-eM-J0I" secondAttribute="centerX" id="tLa-RN-d50"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

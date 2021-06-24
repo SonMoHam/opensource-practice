@@ -15,18 +15,18 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dch-6k-vA1" customClass="PagingMenuFocusView" customModule="PagingKit">
-                    <rect key="frame" x="0.0" y="100" width="395" height="15"/>
+                    <rect key="frame" x="10" y="110" width="375" height="5"/>
                     <color key="backgroundColor" systemColor="systemTealColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="15" id="YIP-fN-GhJ"/>
+                        <constraint firstAttribute="height" constant="5" id="YIP-fN-GhJ"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="r3S-H7-IR4"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="dch-6k-vA1" firstAttribute="leading" secondItem="r3S-H7-IR4" secondAttribute="leading" id="G7X-Bi-BSo"/>
-                <constraint firstItem="r3S-H7-IR4" firstAttribute="trailing" secondItem="dch-6k-vA1" secondAttribute="trailing" id="UEQ-HJ-w7d"/>
+                <constraint firstItem="dch-6k-vA1" firstAttribute="leading" secondItem="r3S-H7-IR4" secondAttribute="leading" constant="10" id="G7X-Bi-BSo"/>
+                <constraint firstItem="r3S-H7-IR4" firstAttribute="trailing" secondItem="dch-6k-vA1" secondAttribute="trailing" constant="10" id="UEQ-HJ-w7d"/>
                 <constraint firstItem="dch-6k-vA1" firstAttribute="bottom" secondItem="r3S-H7-IR4" secondAttribute="bottom" id="rYh-CY-FPY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -34,9 +34,6 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
