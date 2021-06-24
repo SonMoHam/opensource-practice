@@ -18,11 +18,17 @@ class ViewController: UIViewController {
         return vc
     }
     
-    var dataSource = [
-        (menuTitle: "test1", vc: viewController(.red)),
-        (menuTitle: "test2", vc: viewController(.blue)),
-        (menuTitle: "test3", vc: viewController(.yellow))
-    ]
+    //    var dataSource = [
+    //        (menuTitle: "test1", vc: viewController(.red)),
+    //        (menuTitle: "test2", vc: viewController(.blue)),
+    //        (menuTitle: "test3", vc: viewController(.yellow))
+    //    ]
+    var dataSource = [(menu: String, content: UIViewController)]() {
+        didSet{
+            menuViewController.reloadData()
+            contentViewController.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +41,8 @@ class ViewController: UIViewController {
         
         menuViewController.reloadData()
         contentViewController.reloadData()
+        
+        dataSource = makeDataSource()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -46,6 +54,28 @@ class ViewController: UIViewController {
             contentViewController = vc
             contentViewController.dataSource = self // <- set content data source
             contentViewController.delegate = self // <- set content delegate
+        }
+    }
+    
+    fileprivate func makeDataSource() -> [(menu: String, content: UIViewController)] {
+        let myMenuArray = ["first", "second", "third"]
+        
+        return myMenuArray.map {
+            let title = $0
+            switch title {
+            case "first":
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "FirstVC") as! FirstVC
+                return (menu:title, content: vc)
+            case "second":
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "SecondVC") as! SecondVC
+                return (menu:title, content: vc)
+            case "third":
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ThirdVC") as! ThirdVC
+                return (menu:title, content: vc)
+            default:
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "FirstVC") as! FirstVC
+                return (menu:title, content: vc)
+            }
         }
     }
     
@@ -63,7 +93,7 @@ extension ViewController: PagingMenuViewControllerDataSource {
     
     func menuViewController(viewController: PagingMenuViewController, cellForItemAt index: Int) -> PagingMenuViewCell {
         let cell = viewController.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: index) as! MenuCell
-        cell.titleLabel.text = dataSource[index].menuTitle
+        cell.titleLabel.text = dataSource[index].menu
         return cell
     }
 }
@@ -82,7 +112,7 @@ extension ViewController: PagingContentViewControllerDataSource {
     }
     
     func contentViewController(viewController: PagingContentViewController, viewControllerAt index: Int) -> UIViewController {
-        return dataSource[index].vc
+        return dataSource[index].content
     }
 }
 
