@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		1253C052268433B4003DC467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1253C050268433B4003DC467 /* Main.storyboard */; };
 		1253C054268433B5003DC467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1253C053268433B5003DC467 /* Assets.xcassets */; };
 		1253C057268433B5003DC467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1253C055268433B5003DC467 /* LaunchScreen.storyboard */; };
+		1253C0632684378E003DC467 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253C0622684378E003DC467 /* MenuCell.swift */; };
+		1253C066268437C9003DC467 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1253C065268437C9003DC467 /* MenuCell.xib */; };
+		1253C069268439FF003DC467 /* FocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1253C068268439FF003DC467 /* FocusView.xib */; };
 		7A0ADD884A0169AEBC69644D /* Pods_0624_PagingKit_Titorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E6A29928DDD6AB821F7309D /* Pods_0624_PagingKit_Titorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		1253C053268433B5003DC467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1253C056268433B5003DC467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1253C058268433B5003DC467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1253C0622684378E003DC467 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		1253C065268437C9003DC467 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		1253C068268439FF003DC467 /* FocusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusView.xib; sourceTree = "<group>"; };
 		32BDA5DF104561E463BE8FF6 /* Pods-0624_PagingKit_Titorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0624_PagingKit_Titorial.debug.xcconfig"; path = "Target Support Files/Pods-0624_PagingKit_Titorial/Pods-0624_PagingKit_Titorial.debug.xcconfig"; sourceTree = "<group>"; };
 		8E6A29928DDD6AB821F7309D /* Pods_0624_PagingKit_Titorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_0624_PagingKit_Titorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF650017236DDC9D227CA3FF /* Pods-0624_PagingKit_Titorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0624_PagingKit_Titorial.release.xcconfig"; path = "Target Support Files/Pods-0624_PagingKit_Titorial/Pods-0624_PagingKit_Titorial.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +72,10 @@
 				1253C04A268433B4003DC467 /* AppDelegate.swift */,
 				1253C04C268433B4003DC467 /* SceneDelegate.swift */,
 				1253C04E268433B4003DC467 /* ViewController.swift */,
+				1253C068268439FF003DC467 /* FocusView.xib */,
 				1253C050268433B4003DC467 /* Main.storyboard */,
+				1253C0622684378E003DC467 /* MenuCell.swift */,
+				1253C065268437C9003DC467 /* MenuCell.xib */,
 				1253C053268433B5003DC467 /* Assets.xcassets */,
 				1253C055268433B5003DC467 /* LaunchScreen.storyboard */,
 				1253C058268433B5003DC467 /* Info.plist */,
@@ -88,7 +97,6 @@
 				32BDA5DF104561E463BE8FF6 /* Pods-0624_PagingKit_Titorial.debug.xcconfig */,
 				EF650017236DDC9D227CA3FF /* Pods-0624_PagingKit_Titorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +161,8 @@
 			files = (
 				1253C057268433B5003DC467 /* LaunchScreen.storyboard in Resources */,
 				1253C054268433B5003DC467 /* Assets.xcassets in Resources */,
+				1253C066268437C9003DC467 /* MenuCell.xib in Resources */,
+				1253C069268439FF003DC467 /* FocusView.xib in Resources */,
 				1253C052268433B4003DC467 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +218,7 @@
 			files = (
 				1253C04F268433B4003DC467 /* ViewController.swift in Sources */,
 				1253C04B268433B4003DC467 /* AppDelegate.swift in Sources */,
+				1253C0632684378E003DC467 /* MenuCell.swift in Sources */,
 				1253C04D268433B4003DC467 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

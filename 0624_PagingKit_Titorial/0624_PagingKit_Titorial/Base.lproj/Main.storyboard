@@ -49,24 +49,24 @@
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="128.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Paging Menu View Controller-->
         <scene sceneID="U4o-QF-oqe">
             <objects>
-                <viewController id="bzK-U1-dmD" sceneMemberID="viewController">
+                <viewController id="bzK-U1-dmD" customClass="PagingMenuViewController" customModule="PagingKit" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Xw-kz-jRP">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ig-lU-oPk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="-155"/>
+            <point key="canvasLocation" x="877" y="-155"/>
         </scene>
-        <!--View Controller-->
+        <!--Paging Content View Controller-->
         <scene sceneID="UzT-Wa-cPt">
             <objects>
-                <viewController id="PkE-Xt-sKZ" sceneMemberID="viewController">
+                <viewController id="PkE-Xt-sKZ" customClass="PagingContentViewController" customModule="PagingKit" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygR-cR-mfJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="782"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,12 +75,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cn-xa-vqu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="957" y="397"/>
+            <point key="canvasLocation" x="906" y="394"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
